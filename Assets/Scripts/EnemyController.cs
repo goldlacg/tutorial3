@@ -15,6 +15,20 @@ public class EnemyController : MonoBehaviour
         rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
+    void FixedUpdate()
+    {
+        Vector2 position = rigidbody2D.position;
+
+        if (vertical)
+        {
+            position.y = position.y + Time.deltaTime * speed;  
+        }
+        else
+        {
+            position.x = position.x + Time.deltaTime * speed;
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
