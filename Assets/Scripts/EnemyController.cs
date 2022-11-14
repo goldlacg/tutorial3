@@ -11,7 +11,7 @@ public class EnemyController : MonoBehaviour
     Rigidbody2D rigidbody2D;
     float timer;
     int direction = 1;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,11 +25,11 @@ public class EnemyController : MonoBehaviour
 
         if (vertical)
         {
-            position.y = position.y + Time.deltaTime * speed;  
+            position.y = position.y + Time.deltaTime * speed * direction; ;
         }
         else
         {
-            position.x = position.x + Time.deltaTime * speed;
+            position.x = position.x + Time.deltaTime * speed * direction; ;
         }
 
         rigidbody2D.MovePosition(position);
