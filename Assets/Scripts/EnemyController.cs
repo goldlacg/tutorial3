@@ -38,9 +38,12 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector2 position = rigidbody2D.position;
-        position.x = position.x + Time.deltaTime * speed;
+        timer -= Time.deltaTime;
 
-        rigidbody2D.MovePosition(position);
+        if (timer < 0)
+        {
+            direction = -direction;
+            timer = changeTime;
+        }
     }
 }
