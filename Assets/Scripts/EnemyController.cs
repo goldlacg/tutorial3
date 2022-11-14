@@ -16,6 +16,7 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
+        timer = changeTime;
     }
 
     void FixedUpdate()
