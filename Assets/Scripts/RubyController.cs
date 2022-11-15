@@ -36,7 +36,7 @@ public class RubyController : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
-        
+        Vector2 move = 
 
         if (isInvincible)
         {
