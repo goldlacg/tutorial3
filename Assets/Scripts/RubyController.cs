@@ -36,7 +36,9 @@ public class RubyController : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
-        Vector2 move = new 
+        Vector2 move = new Vector2(horizontal, vertical);
+
+        if(!Mathf.Approximately(move.x, move.y) )
 
         if (isInvincible)
         {
