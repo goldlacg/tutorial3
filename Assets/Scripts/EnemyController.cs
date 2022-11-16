@@ -47,6 +47,7 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
         timer -= Time.deltaTime;
+        Debug.Log("")
 
         if (timer < 0)
         {
