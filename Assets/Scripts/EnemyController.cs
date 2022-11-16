@@ -47,7 +47,7 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
         timer -= Time.deltaTime;
-        Debug.Log("")
+        Debug.Log("Robot is " + )
 
         if (timer < 0)
         {
