@@ -83,7 +83,7 @@ public class RubyController : MonoBehaviour
 
             isInvincible = true;
             invincibleTimer = timeInvincible;
-            hitEffect.Play();
+            Instantiate(hitEffect, rigidbody2d.position + Vector2.up * 1.5f, Quaternion.identity);
         }
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
