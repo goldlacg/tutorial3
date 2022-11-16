@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class UIHealthBar : MonoBehaviour
 {
-    public ImageConversion mask;
+    public Image mask;
     float originalSize;
 
     public static UIHealthBar instance { get; private set; }
