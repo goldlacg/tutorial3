@@ -24,7 +24,6 @@ public class RubyController : MonoBehaviour
 
     public GameObject projectilePrefab;
     public ParticleSystem hitEffect;
-    public ParticleSystem healthEffect;
 
     // Start is called before the first frame update
     void Start()
