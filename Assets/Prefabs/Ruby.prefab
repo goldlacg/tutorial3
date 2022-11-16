@@ -109,7 +109,10 @@ MonoBehaviour:
     type: 3}
   hitEffect: {fileID: 5359196478602606461, guid: a627d3104a623bc458a4a9f8b3d5947d,
     type: 3}
-  healthEffect: {fileID: 0}
+  healthEffect: {fileID: 6910289542557569616, guid: 9fa2b1c85dc53a0409b146137f7b9486,
+    type: 3}
+  throwSound: {fileID: 8300000, guid: b5b9f4dcfd272764887ab500fdc0e0b0, type: 3}
+  hitSound: {fileID: 0}
 --- !u!50 &5304257382144715307
 Rigidbody2D:
   serializedVersion: 4
