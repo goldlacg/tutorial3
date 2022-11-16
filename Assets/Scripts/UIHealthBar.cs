@@ -13,8 +13,8 @@ public class UIHealthBar : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void SetValue(float value)
     {
-        
+        mask.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, originalSize * value);
     }
 }
