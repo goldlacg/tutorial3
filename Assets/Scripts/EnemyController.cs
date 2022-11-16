@@ -15,6 +15,8 @@ public class EnemyController : MonoBehaviour
 
     Animator animator;
 
+    public ParticleSystem smokeEffect;
+
     // Start is called before the first frame update
     void Start()
     {
