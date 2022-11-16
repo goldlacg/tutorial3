@@ -41,11 +41,6 @@ public class EnemyController : MonoBehaviour
         }
 
         rigidbody2d.MovePosition(position);
-
-        if (!broken)
-        {
-            return;
-        }
     }
 
     // Update is called once per frame
@@ -57,11 +52,6 @@ public class EnemyController : MonoBehaviour
         {
             direction = -direction;
             timer = changeTime;
-        }
-
-        if (!broken)
-        {
-            return;
         }
     }
 
