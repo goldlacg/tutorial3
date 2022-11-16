@@ -17,7 +17,7 @@ public class HealthCollectible : MonoBehaviour
             {
                 controller.ChangeHealth(1);
                 Destroy(gameObject);
-                Instantiate(healthEffect, rigidbody2d.position + Vector2.up * 1.5f, Quaternion.identity);
+                Instantiate(healthEffect, Vector2.up * 1.5f, Quaternion.identity);
             }
         }
     }
