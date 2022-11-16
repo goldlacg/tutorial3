@@ -106,6 +106,7 @@ MonoBehaviour:
   timeInvincible: 2
   projectilePrefab: {fileID: 3654839685523794761, guid: e99885ce1c076da46a6779477d691451,
     type: 3}
+  hitEffect: {fileID: 9022350446556709881}
 --- !u!50 &5304257382144715307
 Rigidbody2D:
   serializedVersion: 4
@@ -242,6 +243,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a627d3104a623bc458a4a9f8b3d5947d, type: 3}
+--- !u!198 &9022350446556709881 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5359196478602606461, guid: a627d3104a623bc458a4a9f8b3d5947d,
+    type: 3}
+  m_PrefabInstance: {fileID: 3993113009424200836}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &9176554963051985880 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5202729862828642140, guid: a627d3104a623bc458a4a9f8b3d5947d,
