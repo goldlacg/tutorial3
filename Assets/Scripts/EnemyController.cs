@@ -25,7 +25,7 @@ public class EnemyController : MonoBehaviour
         timer = changeTime;
         animator = GetComponent<Animator>();
 
-        GameObject rubyControllerObject = GameObject.FindWithTag("RubyController")
+        GameObject rubyControllerObject = GameObject.FindWithTag("RubyController");
         {
             if (rubyControllerObject != null)
             {
