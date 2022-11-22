@@ -127,7 +127,7 @@ public class RubyController : MonoBehaviour
             PlaySound(hitSound);
             Instantiate(hitEffect, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity);
 
-            if (currentHealth == 0)
+            if (currentHealth <= 0)
             {
                 loseTextObject.SetActive(true);
                 speed = 0.0f;
