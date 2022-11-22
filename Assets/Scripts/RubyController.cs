@@ -48,6 +48,7 @@ public class RubyController : MonoBehaviour
         animator = GetComponent<Animator>();
         fixText.text = "Robots Fixed: " + robotsFixed + "/6".ToString();
         winTextObject.SetActive(false);
+        loseTextObject.SetActive(false);
 
         audioSource = GetComponent<AudioSource>();
     }
