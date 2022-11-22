@@ -121,7 +121,8 @@ public class RubyController : MonoBehaviour
 
         else if (amount > 0)
         {
-            ParticleSystem healthEffect = Instantiate(healthEffect, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity);
+            ParticleSystem healthEffectclone = Instantiate(healthEffect, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity);
+            healthEffectclone.Play();
         }
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
