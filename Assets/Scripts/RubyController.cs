@@ -40,6 +40,8 @@ public class RubyController : MonoBehaviour
     AudioSource audioSource;
     public AudioClip throwSound;
     public AudioClip hitSound;
+    public AudioClip winSound;
+    public AudioClip loseSound;
 
     bool gameOver;
 
