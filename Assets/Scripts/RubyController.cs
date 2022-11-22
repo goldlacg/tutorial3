@@ -126,18 +126,18 @@ public class RubyController : MonoBehaviour
             invincibleTimer = timeInvincible;
             PlaySound(hitSound);
             Instantiate(hitEffect, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity);
-
-            if (currentHealth <= 0)
-            {
-                loseTextObject.SetActive(true);
-                speed = 0.0f;
-            }
         }
 
         else if (amount > 0)
         {
             ParticleSystem healthEffectclone = Instantiate(healthEffect, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity);
             healthEffectclone.Play();
+        }
+
+        if (currentHealth <= 0)
+        {
+            loseTextObject.SetActive(true);
+            speed = 0.0f;
         }
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
