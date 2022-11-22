@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+
 
 public class RubyController : MonoBehaviour
 {
@@ -121,7 +124,7 @@ public class RubyController : MonoBehaviour
 
     public void ScoreAmount(int score)
     {
-        
+
     }
 
     void Launch()
