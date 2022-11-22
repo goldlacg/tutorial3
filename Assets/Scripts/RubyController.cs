@@ -44,7 +44,7 @@ public class RubyController : MonoBehaviour
         rigidbody2d = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
         animator = GetComponent<Animator>();
-        fixText.text = "Robots Fixed: " + robotsFixed.ToString();
+        fixText.text = "Robots Fixed: " + robotsFixed + "/6".ToString();
 
         audioSource = GetComponent<AudioSource>();
     }
@@ -55,9 +55,8 @@ public class RubyController : MonoBehaviour
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
 
-        //score = rFixed;
-        //ScoreAmount();
-
+        
+        
         Vector2 move = new Vector2(horizontal, vertical);
 
         if (!Mathf.Approximately(move.x, 0.0f) || !Mathf.Approximately(move.y, 0.0f))
