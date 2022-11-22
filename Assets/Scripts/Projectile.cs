@@ -33,7 +33,7 @@ public class Projectile : MonoBehaviour
         {
             e.Fix();
             RubyController.robotsFixed += 1;
-            Debug 
+            Debug.Log(RubyController.robotsFixed + "/6");
         }
         Destroy(gameObject);
 
