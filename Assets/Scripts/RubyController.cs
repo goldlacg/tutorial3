@@ -29,6 +29,7 @@ public class RubyController : MonoBehaviour
     AudioSource audioSource;
     public AudioClip throwSound;
     public AudioClip hitSound;
+    public ParticleSystem particle;
 
     // Start is called before the first frame update
     void Start()
@@ -114,7 +115,7 @@ public class RubyController : MonoBehaviour
 
     public void PlayEffect(ParticleSystem healthEffect)
     {
-        PlayEffect(healthEffect);
+        particle.Play(healthEffect);
     }
 
     void Launch()
