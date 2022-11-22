@@ -102,15 +102,7 @@ public class EnemyController : MonoBehaviour
 
     void ChangeScore()
     {
-        
-
-        else if (amount > 0)
-        {
-            ParticleSystem healthEffectclone = Instantiate(healthEffect, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity);
-            healthEffectclone.Play();
-        }
-
-        currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
+        score = ;
         UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
     }
     }
