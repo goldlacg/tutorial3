@@ -12,9 +12,8 @@ public class RubyController : MonoBehaviour
     public int maxHealth = 5;
     public float timeInvincible = 2.0f;
 
-    public static int rFixed = 0;
-    public int score;
 
+    public int score;
     public TextMeshProUGUI fixText;
 
     public int health { get { return currentHealth; } }
@@ -129,15 +128,15 @@ public class RubyController : MonoBehaviour
         UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
     }
 
-    void ScoreAmount()
-    {
-        fixText.text = "Robots Fixed: " + rFixed + "/6";
+   // void ScoreAmount()
+    //{
+        //fixText.text = "Robots Fixed: " + rFixed + "/6";
 
-        if (rFixed == 5)
-        {
+        //if (rFixed == 5)
+        //{
             //winTextObject.SetActive(true);
-        }
-    }
+        //}
+    //}
 
     void Launch()
     {
