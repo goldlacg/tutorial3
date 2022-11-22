@@ -15,8 +15,8 @@ public class RubyController : MonoBehaviour
     public TextMeshProUGUI fixText;
     public static int robotsFixed = 0;
     public int score;
-    public TextMeshProUGUI winTextObject;
-    public TextMeshProUGUI loseTextObject;
+    public GameObject winTextObject;
+    public GameObject loseTextObject;
 
     public int health { get { return currentHealth; } }
     int currentHealth;
