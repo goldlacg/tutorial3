@@ -77,7 +77,7 @@ public class HardEnemyController : MonoBehaviour
         }
     }
 
-    public void Fix()
+    public void HardFix()
     {
         broken = false;
         rigidbody2D.simulated = false;
