@@ -25,6 +25,7 @@ public class RubyController : MonoBehaviour
     public GameObject projectilePrefab;
     public ParticleSystem hitEffect;
     public ParticleSystem healthEffect;
+    public GameObject collectibleHealth;
 
     AudioSource audioSource;
     public AudioClip throwSound;
@@ -110,7 +111,7 @@ public class RubyController : MonoBehaviour
 
         if (amount > 0)
         {
-            GameObject healthEffect = Instantiate(healthEffect, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity);
+            GameObject collectibleHealth = Instantiate(healthEffect, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity);
         }
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
