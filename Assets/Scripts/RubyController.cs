@@ -105,6 +105,15 @@ public class RubyController : MonoBehaviour
         if (robotsFixed == 6)
         {
             winTextObject.SetActive(true);
+            gameOver = true;
+        }
+
+        if (Input.GetKey(KeyCode.R))
+        {
+            if (gameOver == true)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            }
         }
     }
 
@@ -141,6 +150,7 @@ public class RubyController : MonoBehaviour
         {
             loseTextObject.SetActive(true);
             speed = 0.0f;
+            gameOver = true;
         }
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
