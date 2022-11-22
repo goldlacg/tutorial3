@@ -47,7 +47,7 @@ public class RubyController : MonoBehaviour
         currentHealth = maxHealth;
         animator = GetComponent<Animator>();
         fixText.text = "Robots Fixed: " + robotsFixed + "/6".ToString();
-        winTextObject.SetActive(false);
+        //winTextObject.SetActive(false);
 
         audioSource = GetComponent<AudioSource>();
     }
@@ -100,7 +100,7 @@ public class RubyController : MonoBehaviour
 
         if (robotsFixed == 6)
         {
-            winTextObject.SetActive(true);
+            //winTextObject.SetActive(true);
         }
     }
 
