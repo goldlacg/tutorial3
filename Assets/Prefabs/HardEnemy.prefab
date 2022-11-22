@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 193629182817387360}
   - component: {fileID: 193629182817387361}
   - component: {fileID: 193629182817387366}
-  - component: {fileID: 193629182817387367}
   - component: {fileID: 1607290831056590269}
   - component: {fileID: -2987828983226482221}
   - component: {fileID: 3846527246911369033}
@@ -138,22 +137,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &193629182817387367
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 193629182817387364}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5621871d38058e145bc2bcabe07055a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
-  vertical: 0
-  changeTime: 2
-  smokeEffect: {fileID: 4389501472431388233}
 --- !u!95 &1607290831056590269
 Animator:
   serializedVersion: 4
@@ -386,12 +369,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b33266f54046bbb4da14c5ac3c9d3ff0, type: 3}
---- !u!198 &4389501472431388233 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 6494291799141469348, guid: b33266f54046bbb4da14c5ac3c9d3ff0,
-    type: 3}
-  m_PrefabInstance: {fileID: 7407013662350441197}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8179545386014215893 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1677989569641641016, guid: b33266f54046bbb4da14c5ac3c9d3ff0,
