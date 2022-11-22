@@ -56,7 +56,7 @@ public class RubyController : MonoBehaviour
         vertical = Input.GetAxis("Vertical");
 
         score = rFixed;
-        
+        ScoreAmount(int score);
 
         Vector2 move = new Vector2(horizontal, vertical);
 
