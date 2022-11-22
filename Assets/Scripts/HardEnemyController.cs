@@ -98,6 +98,7 @@ public class HardEnemyController : MonoBehaviour
         rigidbody2D.simulated = false;
         animator.SetTrigger("Fixed");
         smokeEffect.Stop();
+        Destroy(smokeEffect.gameObject);
     }
 
 }
