@@ -112,6 +112,8 @@ MonoBehaviour:
     type: 3}
   healthEffect: {fileID: 6910289542557569616, guid: 9fa2b1c85dc53a0409b146137f7b9486,
     type: 3}
+  collectibleHealth: {fileID: 7499547121130901470, guid: 43a7026053563fc41935393a34d2a53c,
+    type: 3}
   throwSound: {fileID: 8300000, guid: b5b9f4dcfd272764887ab500fdc0e0b0, type: 3}
   hitSound: {fileID: 8300000, guid: 075baa5a4ffa4c24097c3565183deacc, type: 3}
 --- !u!50 &5304257382144715307
