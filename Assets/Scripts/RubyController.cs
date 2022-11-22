@@ -110,7 +110,7 @@ public class RubyController : MonoBehaviour
 
         if (amount > 0)
         {
-            Instantiate(healthEffect, rigidbody2d.position + Vector2.up * 1.5f, Quaternion.identity);
+            Instantiate(healthEffect, rigidbody2d.position + Vector2.up * 0f, Quaternion.identity);
         }
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
