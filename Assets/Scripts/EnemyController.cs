@@ -105,6 +105,6 @@ public class EnemyController : MonoBehaviour
     void ChangeHealth()
     {
         RubyController fixText = gameObject.GetComponent<RubyController>();
-        
+        fixText.text = "Robots Fixed: " + robotsFixed + "/6".ToString();
     }
 }
