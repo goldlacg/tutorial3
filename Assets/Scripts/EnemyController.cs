@@ -101,12 +101,4 @@ public class EnemyController : MonoBehaviour
         animator.SetTrigger("Fixed");
         smokeEffect.Stop();
     }
-
-    void ChangeScore()
-    {
-        score.text
-        UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
-    }
-    }
-
 }
