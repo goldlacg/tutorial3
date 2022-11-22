@@ -130,7 +130,10 @@ public class RubyController : MonoBehaviour
     {
         fixText.text = "Robots Fixed: " + rFixed + "/5";
 
-        
+        if (rFixed == 5)
+        {
+            //winTextObject.SetActive(true);
+        }
     }
 
     void Launch()
