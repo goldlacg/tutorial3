@@ -16,7 +16,7 @@ public class EnemyController : MonoBehaviour
 
     Animator animator;
 
-    public int score;
+    public int score = 0;
 
     public ParticleSystem smokeEffect;
 
@@ -104,7 +104,7 @@ public class EnemyController : MonoBehaviour
 
     void ChangeScore()
     {
-        score = ;
+        score.text
         UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
     }
     }
