@@ -130,7 +130,7 @@ public class RubyController : MonoBehaviour
             if (currentHealth == 0)
             {
                 loseTextObject.SetActive(true);
-                rigidbody2d.simulated(false);
+                speed = 0.0f;
             }
         }
 
