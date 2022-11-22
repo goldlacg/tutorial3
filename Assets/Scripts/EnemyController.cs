@@ -7,6 +7,7 @@ public class EnemyController : MonoBehaviour
     public float speed;
     public bool vertical;
     public float changeTime = 3.0f;
+    private RubyController rubyController;
 
     Rigidbody2D rigidbody2D;
     float timer;
@@ -23,6 +24,20 @@ public class EnemyController : MonoBehaviour
         rigidbody2D = GetComponent<Rigidbody2D>();
         timer = changeTime;
         animator = GetComponent<Animator>();
+
+        GameObject rubyControllerObject = GameObject.FindWithTag("RubyController")
+        {
+            if (rubyControllerObject != null)
+            {
+                rubyController = rubyControllerObject.GetComponent<RubyController>();
+                print("Cannot find RubyController Script!");
+            }
+
+            if (rubyController == null)
+            {
+                print("Cannot find GameController Script!");
+            }
+        }
     }
 
     void FixedUpdate()
