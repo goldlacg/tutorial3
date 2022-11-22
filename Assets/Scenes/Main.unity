@@ -15453,6 +15453,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: HardEnemy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3846527246911369033, guid: 0d50a4ecaa5c5db4690c9cfd8e2fb205,
+        type: 3}
+      propertyPath: smokeEffect
+      value: 
+      objectReference: {fileID: 1036550024}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d50a4ecaa5c5db4690c9cfd8e2fb205, type: 3}
 --- !u!4 &44955326 stripped
@@ -15639,7 +15644,7 @@ GameObject:
   - component: {fileID: 75672888}
   - component: {fileID: 75672887}
   m_Layer: 5
-  m_Name: Score
+  m_Name: Fix Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15654,7 +15659,7 @@ RectTransform:
   m_GameObject: {fileID: 75672885}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_LocalScale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 262952150}
@@ -18072,6 +18077,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5071281480892246330}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &854838062 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 8207115823341493760, guid: 0d50a4ecaa5c5db4690c9cfd8e2fb205,
+    type: 3}
+  m_PrefabInstance: {fileID: 2122063462}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &865512999
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18428,6 +18439,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7764362898408990878, guid: ad6c6e71ffdfdfd4a988f1f2e652ff7b,
     type: 3}
   m_PrefabInstance: {fileID: 1719131016}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1036550024 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 8207115823341493760, guid: 0d50a4ecaa5c5db4690c9cfd8e2fb205,
+    type: 3}
+  m_PrefabInstance: {fileID: 40858038}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1068149172
 PrefabInstance:
@@ -21331,6 +21348,11 @@ PrefabInstance:
       propertyPath: vertical
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3846527246911369033, guid: 0d50a4ecaa5c5db4690c9cfd8e2fb205,
+        type: 3}
+      propertyPath: smokeEffect
+      value: 
+      objectReference: {fileID: 854838062}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d50a4ecaa5c5db4690c9cfd8e2fb205, type: 3}
 --- !u!1001 &193629182912741397
@@ -21424,27 +21446,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ruby
       objectReference: {fileID: 0}
-    - target: {fileID: 464832455343320387, guid: 452eba9841cbefc4b8ecf18dabea5f2e,
+    - target: {fileID: 464832455343320444, guid: 452eba9841cbefc4b8ecf18dabea5f2e,
         type: 3}
-      propertyPath: m_TagString
-      value: RubyController
+      propertyPath: score
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 464832455343320444, guid: 452eba9841cbefc4b8ecf18dabea5f2e,
         type: 3}
       propertyPath: fixText
       value: 
       objectReference: {fileID: 75672887}
-    - target: {fileID: 464832455343320444, guid: 452eba9841cbefc4b8ecf18dabea5f2e,
-        type: 3}
-      propertyPath: healthEffect
-      value: 
-      objectReference: {fileID: 6910289542557569616, guid: 9fa2b1c85dc53a0409b146137f7b9486,
-        type: 3}
-    - target: {fileID: 464832455343320444, guid: 452eba9841cbefc4b8ecf18dabea5f2e,
-        type: 3}
-      propertyPath: timeInvincible
-      value: 1.5
-      objectReference: {fileID: 0}
     - target: {fileID: 464832455343320445, guid: 452eba9841cbefc4b8ecf18dabea5f2e,
         type: 3}
       propertyPath: m_RootOrder
@@ -21499,16 +21510,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5339664421965380314, guid: 452eba9841cbefc4b8ecf18dabea5f2e,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5652132102326793129, guid: 452eba9841cbefc4b8ecf18dabea5f2e,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 452eba9841cbefc4b8ecf18dabea5f2e, type: 3}
