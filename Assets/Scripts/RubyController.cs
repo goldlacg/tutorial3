@@ -116,12 +116,12 @@ public class RubyController : MonoBehaviour
             isInvincible = true;
             invincibleTimer = timeInvincible;
             PlaySound(hitSound);
-            Instantiate(hitEffect, rigidbody2d.position + Vector2.up * 1.5f, Quaternion.identity);
+            Instantiate(hitEffect, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity);
         }
 
         else if (amount > 0)
         {
-            Instantiate(healthEffect, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity);
+            ParticleSystem healthEffect = Instantiate(healthEffect, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity);
         }
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
