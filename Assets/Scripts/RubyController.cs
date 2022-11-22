@@ -11,7 +11,7 @@ public class RubyController : MonoBehaviour
 
     public int maxHealth = 5;
     public float timeInvincible = 2.0f;
-    
+
     public static int rFixed = 0;
     public int score;
 
@@ -56,7 +56,7 @@ public class RubyController : MonoBehaviour
         vertical = Input.GetAxis("Vertical");
 
         score = rFixed;
-        ScoreAmount(int score);
+        ScoreAmount();
 
         Vector2 move = new Vector2(horizontal, vertical);
 
@@ -129,7 +129,7 @@ public class RubyController : MonoBehaviour
         UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
     }
 
-    public void ScoreAmount(int score)
+    void ScoreAmount()
     {
         fixText.text = "Robots Fixed: " + rFixed + "/5";
 
