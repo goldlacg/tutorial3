@@ -119,7 +119,7 @@ public class RubyController : MonoBehaviour
 
     public void PlayEffect(ParticleSystem healthEffect)
     {
-        healthEffect.Play(healthEffect);
+        controller.PlayEffect(healthEffect);
     }
 
     void Launch()
