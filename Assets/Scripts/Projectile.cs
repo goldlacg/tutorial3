@@ -32,7 +32,7 @@ public class Projectile : MonoBehaviour
         if (e != null)
         {
             e.Fix();
-            //RubyController.rFixed += 1;
+            RubyController.robotsFixed += 1;
         }
         Destroy(gameObject);
 
@@ -40,7 +40,7 @@ public class Projectile : MonoBehaviour
         if (h != null)
         {
             h.HardFix();
-            //RubyController.rFixed += 1;
+            RubyController.robotsFixed += 1;
         }
         Destroy(gameObject);
     }
