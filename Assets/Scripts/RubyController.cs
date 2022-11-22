@@ -56,7 +56,7 @@ public class RubyController : MonoBehaviour
         vertical = Input.GetAxis("Vertical");
 
         
-        
+
         Vector2 move = new Vector2(horizontal, vertical);
 
         if (!Mathf.Approximately(move.x, 0.0f) || !Mathf.Approximately(move.y, 0.0f))
@@ -131,7 +131,7 @@ public class RubyController : MonoBehaviour
 
     // void ScoreAmount()
     //{
-    //fixText.text = "Robots Fixed: " + rFixed + "/6";
+    //fixText.text = "Robots Fixed: " + robotsFixed + "/6".ToString();
 
     //if (rFixed == 5)
     //{
