@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: -657478381775032781}
   m_Layer: 8
   m_Name: Ruby
-  m_TagString: Untagged
+  m_TagString: RubyController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105,7 +105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   maxHealth: 5
-  timeInvincible: 2
+  timeInvincible: 1.5
   fixText: {fileID: 0}
   score: 1
   projectilePrefab: {fileID: 3654839685523794761, guid: e99885ce1c076da46a6779477d691451,
