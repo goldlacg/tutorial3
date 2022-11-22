@@ -14,7 +14,6 @@ public class RubyController : MonoBehaviour
 
 
     public int score;
-    public TextMeshProUGUI fixText;
 
     public int health { get { return currentHealth; } }
     int currentHealth;
