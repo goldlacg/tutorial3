@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 193629182817387367}
   - component: {fileID: 1607290831056590269}
   - component: {fileID: -2987828983226482221}
+  - component: {fileID: 3846527246911369033}
   m_Layer: 0
   m_Name: HardEnemy
   m_TagString: Untagged
@@ -80,7 +81,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ba31f676b14d5b44383bf85c940cbb90, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.28773582, b: 0.28773582, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -144,7 +145,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 193629182817387364}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5621871d38058e145bc2bcabe07055a7, type: 3}
   m_Name: 
@@ -269,6 +270,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3846527246911369033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193629182817387364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 773264c6f64ea5546aaa8e61978f1001, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 6
+  vertical: 0
+  changeTime: 1.25
+  smokeEffect: {fileID: 6494291799141469348, guid: b33266f54046bbb4da14c5ac3c9d3ff0,
+    type: 3}
 --- !u!1001 &7407013662350441197
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -335,6 +353,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SmokeEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 6494291799141469348, guid: b33266f54046bbb4da14c5ac3c9d3ff0,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key0.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6494291799141469348, guid: b33266f54046bbb4da14c5ac3c9d3ff0,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key0.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6494291799141469348, guid: b33266f54046bbb4da14c5ac3c9d3ff0,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key0.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6494291799141469348, guid: b33266f54046bbb4da14c5ac3c9d3ff0,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key1.b
+      value: 0.30562478
+      objectReference: {fileID: 0}
+    - target: {fileID: 6494291799141469348, guid: b33266f54046bbb4da14c5ac3c9d3ff0,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key1.g
+      value: 0.30562478
+      objectReference: {fileID: 0}
+    - target: {fileID: 6494291799141469348, guid: b33266f54046bbb4da14c5ac3c9d3ff0,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key1.r
+      value: 0.6415094
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b33266f54046bbb4da14c5ac3c9d3ff0, type: 3}
