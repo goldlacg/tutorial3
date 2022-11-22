@@ -131,7 +131,7 @@ public class RubyController : MonoBehaviour
 
     void ScoreAmount()
     {
-        fixText.text = "Robots Fixed: " + rFixed + "/5";
+        fixText.text = "Robots Fixed: " + rFixed + "/6";
 
         if (rFixed == 5)
         {
