@@ -119,7 +119,7 @@ public class RubyController : MonoBehaviour
             Instantiate(hitEffect, rigidbody2d.position + Vector2.up * 1.5f, Quaternion.identity);
         }
 
-        if (amount == 1)
+        else if (amount > 0)
         {
             Instantiate(healthEffect, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity);
         }
