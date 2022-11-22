@@ -129,15 +129,10 @@ public class RubyController : MonoBehaviour
         UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
     }
 
-    // void ScoreAmount()
-    //{
-    //fixText.text = "Robots Fixed: " + robotsFixed + "/6".ToString();
-
-    //if (rFixed == 5)
-    //{
-    //winTextObject.SetActive(true);
-    //}
-    //}
+    public void ChangeScore(int score)
+    {
+        
+    }
 
     void Launch()
     {
