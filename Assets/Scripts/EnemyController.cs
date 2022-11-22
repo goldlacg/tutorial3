@@ -15,8 +15,6 @@ public class EnemyController : MonoBehaviour
     int direction = 1;
     bool broken = true;
 
-    public TextMeshProUGUI fixText;
-
     Animator animator;
 
     public ParticleSystem smokeEffect;
