@@ -15,6 +15,7 @@ public class RubyController : MonoBehaviour
     public TextMeshProUGUI fixText;
     public static int robotsFixed = 0;
     public int score;
+    public TextMeshProUGUI winTextO
 
     public int health { get { return currentHealth; } }
     int currentHealth;
@@ -94,6 +95,11 @@ public class RubyController : MonoBehaviour
         }
 
         fixText.text = "Robots Fixed: " + robotsFixed + "/6".ToString();
+
+        if (robotsFixed == 6)
+        {
+            winTextObject.SetActive(true);
+        }
     }
 
     void FixedUpdate()
