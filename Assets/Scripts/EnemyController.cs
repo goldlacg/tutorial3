@@ -14,6 +14,8 @@ public class EnemyController : MonoBehaviour
     int direction = 1;
     bool broken = true;
 
+    public TextMeshProUGUI 
+
     Animator animator;
 
     public ParticleSystem smokeEffect;
@@ -103,7 +105,7 @@ public class EnemyController : MonoBehaviour
 
     void ChangeScore()
     {
-        
+
     }
 
 }
