@@ -130,6 +130,7 @@ public class RubyController : MonoBehaviour
             if (currentHealth == 0)
             {
                 loseTextObject.SetActive(true);
+                
             }
         }
 
