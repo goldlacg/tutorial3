@@ -12,7 +12,7 @@ public class RubyController : MonoBehaviour
     public int maxHealth = 5;
     public float timeInvincible = 2.0f;
     
-    public static int rfixed = 0;
+    public static int rFixed = 0;
     public int score;
 
     public TextMeshProUGUI fixText;
@@ -128,6 +128,8 @@ public class RubyController : MonoBehaviour
 
     public void ScoreAmount(int score)
     {
+        fixText.text = "Robots Fixed: " + rFixed + "/5";
+
         
     }
 
