@@ -12,7 +12,8 @@ public class RubyController : MonoBehaviour
     public int maxHealth = 5;
     public float timeInvincible = 2.0f;
 
-
+    public TextMeshProUGUI fixText;
+    public static int robotsFixed = 0;
     public int score;
 
     public int health { get { return currentHealth; } }
