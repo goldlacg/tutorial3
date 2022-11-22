@@ -109,13 +109,10 @@ public class RubyController : MonoBehaviour
             Instantiate(hitEffect, rigidbody2d.position + Vector2.up * 1.5f, Quaternion.identity);
         }
 
+        if ()
+
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
-    }
-
-    public void PlayEffect(ParticleSystem healthEffect)
-    {
-        particle.Play(healthEffect);
     }
 
     void Launch()
