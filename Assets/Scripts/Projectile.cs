@@ -40,7 +40,6 @@ public class Projectile : MonoBehaviour
         {
             h.Fix();
         }
-
         Destroy(gameObject);
     }
 }
