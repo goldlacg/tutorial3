@@ -101,4 +101,9 @@ public class EnemyController : MonoBehaviour
         animator.SetTrigger("Fixed");
         smokeEffect.Stop();
     }
+
+    void ChangeHealth()
+    {
+        
+    }
 }
