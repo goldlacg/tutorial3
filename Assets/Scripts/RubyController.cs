@@ -113,6 +113,7 @@ public class RubyController : MonoBehaviour
             if (gameOver == true)
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                robotsFixed = 0;
             }
         }
     }
