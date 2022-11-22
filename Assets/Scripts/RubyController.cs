@@ -126,6 +126,11 @@ public class RubyController : MonoBehaviour
             invincibleTimer = timeInvincible;
             PlaySound(hitSound);
             Instantiate(hitEffect, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity);
+
+            if (currentHealth == 0)
+            {
+                loseTextObject.SetActve(true);
+            }
         }
 
         else if (amount > 0)
@@ -136,11 +141,6 @@ public class RubyController : MonoBehaviour
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
-
-        if (currentHealth == 0)
-        {
-            loseTextObject.SetActve(true);
-        }
     }
 
     void Launch()
