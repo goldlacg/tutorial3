@@ -119,7 +119,7 @@ public class RubyController : MonoBehaviour
             Instantiate(hitEffect, rigidbody2d.position + Vector2.up * 1.5f, Quaternion.identity);
         }
 
-        if (amount > 0)
+        if (amount == 1)
         {
             Instantiate(healthEffect, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity);
         }
@@ -128,14 +128,14 @@ public class RubyController : MonoBehaviour
         UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
     }
 
-   // void ScoreAmount()
+    // void ScoreAmount()
     //{
-        //fixText.text = "Robots Fixed: " + rFixed + "/6";
+    //fixText.text = "Robots Fixed: " + rFixed + "/6";
 
-        //if (rFixed == 5)
-        //{
-            //winTextObject.SetActive(true);
-        //}
+    //if (rFixed == 5)
+    //{
+    //winTextObject.SetActive(true);
+    //}
     //}
 
     void Launch()
