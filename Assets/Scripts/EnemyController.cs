@@ -100,4 +100,6 @@ public class EnemyController : MonoBehaviour
         smokeEffect.Stop();
     }
 
+    
+
 }
