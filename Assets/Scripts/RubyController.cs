@@ -108,10 +108,10 @@ public class RubyController : MonoBehaviour
         {
             winTextObject.SetActive(true);
             gameOver = true;
-            musicSource.Stop();
-            musicSource.clip = winMusic;
-            musicSource.Play();
-            musicSource.loop = false;
+            audioSource.Stop();
+            audioSource.clip = winSound;
+            audioSource.Play();
+            audioSource.loop = false;
         }
 
         if (Input.GetKey(KeyCode.R))
@@ -120,6 +120,8 @@ public class RubyController : MonoBehaviour
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
                 robotsFixed = 0;
+                audioSource.Play();
+                audioSource.loop = true;
             }
         }
     }
