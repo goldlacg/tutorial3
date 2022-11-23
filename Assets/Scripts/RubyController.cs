@@ -108,6 +108,10 @@ public class RubyController : MonoBehaviour
         {
             winTextObject.SetActive(true);
             gameOver = true;
+            musicSource.Stop();
+            musicSource.clip = winMusic;
+            musicSource.Play();
+            musicSource.loop = false;
         }
 
         if (Input.GetKey(KeyCode.R))
