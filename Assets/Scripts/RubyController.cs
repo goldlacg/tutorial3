@@ -58,9 +58,9 @@ public class RubyController : MonoBehaviour
         winTextObject.SetActive(false);
         loseTextObject.SetActive(false);
 
-        audioSource.clip = bkgSound;
-        audioSource.Play();
-        audioSource.loop = true;
+        
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -125,7 +125,6 @@ public class RubyController : MonoBehaviour
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
                 robotsFixed = 0;
-                audioSource.clip = bkgSound;
                 audioSource.Play();
                 audioSource.loop = true;
             }
@@ -166,10 +165,6 @@ public class RubyController : MonoBehaviour
             loseTextObject.SetActive(true);
             speed = 0.0f;
             gameOver = true;
-            audioSource.Stop();
-            audioSource.clip = loseSound;
-            audioSource.Play();
-            audioSource.loop = false;
         }
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
