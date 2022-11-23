@@ -37,7 +37,8 @@ public class RubyController : MonoBehaviour
     public ParticleSystem healthEffect;
     public GameObject collectibleHealth;
 
-    AudioSource audioSource;
+    public AudioSource audioSource;
+    public AudioClip bkgSound;
     public AudioClip throwSound;
     public AudioClip hitSound;
     public AudioClip winSound;
