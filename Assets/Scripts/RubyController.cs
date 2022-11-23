@@ -160,6 +160,9 @@ public class RubyController : MonoBehaviour
             loseTextObject.SetActive(true);
             speed = 0.0f;
             gameOver = true;
+            audioSource.clip = loseSound;
+            audioSource.Play();
+            audioSource.loop = false;
         }
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
