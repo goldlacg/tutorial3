@@ -108,7 +108,7 @@ public class RubyController : MonoBehaviour
         {
             winTextObject.SetActive(true);
             gameOver = true;
-            audioSource.Stop();
+            audioSource = Stop
             audioSource.clip = winSound;
             audioSource.Play();
             audioSource.loop = false;
