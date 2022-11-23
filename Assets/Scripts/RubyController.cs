@@ -61,8 +61,6 @@ public class RubyController : MonoBehaviour
         audioSource.clip = bkgSound;
         audioSource.Play();
         audioSource.loop = true;
-
-        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
