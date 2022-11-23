@@ -56,7 +56,7 @@ public class RubyController : MonoBehaviour
         winTextObject.SetActive(false);
         loseTextObject.SetActive(false);
 
-        audioSource = GetComponent<AudioSource>();
+
     }
 
     // Update is called once per frame
