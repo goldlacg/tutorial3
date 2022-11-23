@@ -37,8 +37,7 @@ public class RubyController : MonoBehaviour
     public ParticleSystem healthEffect;
     public GameObject collectibleHealth;
 
-    public AudioSource audioSource;
-    public AudioClip bkgSound;
+    AudioSource audioSource;
     public AudioClip throwSound;
     public AudioClip hitSound;
     public AudioClip winSound;
@@ -52,13 +51,9 @@ public class RubyController : MonoBehaviour
         rigidbody2d = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
         animator = GetComponent<Animator>();
-
         fixText.text = "Robots Fixed: " + robotsFixed + "/6".ToString();
-
         winTextObject.SetActive(false);
         loseTextObject.SetActive(false);
-
-        
 
         audioSource = GetComponent<AudioSource>();
     }
